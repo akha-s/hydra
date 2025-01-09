@@ -1,0 +1,21 @@
+@mixin d-flex($j-c: flex-start, $gap: 0, $a-i: center) {
+  display: flex;
+  align-items: $a-i;
+  justify-content: $j-c;
+  gap: $gap;
+}
+
+@mixin btn(
+  $border: 2px solid transparent,
+  $bg-linear: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%),
+  $color: $bg-color
+) {
+  padding: 16px 42px;
+  border-radius: 40px;
+  border: $border;
+  background-image: $bg-linear;
+  color: $color;
+  font-family: bold;
+  font-size: 12px;
+  position: relative;
+}

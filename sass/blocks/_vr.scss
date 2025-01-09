@@ -1,0 +1,71 @@
+.vr__wrapper {
+  padding: 94px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+}
+
+.vr__top {
+  @include d-flex(flex-start, 322px);
+}
+
+.vr-top__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vr-top__title {
+  font-family: bold;
+  font-size: 36px;
+}
+
+.vr-top__minititle {
+    font-family: light;
+    font-size: 36px;
+    position: relative;
+}
+
+.vr-top__minititle::after {
+    content: "";
+    width: 228px;
+    height: 100px;
+    background-image: url("../../assents/vr.arrow.png");
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    right: -258px;
+}
+
+.vr-top__text {
+    width: 652px;
+    font-size: 1rem;
+}
+
+// vr-top-end //
+
+.vr__bottom {
+  @include d-flex(flex-start, 118px);
+}
+
+.vr-bottom__box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vr-bottom__title {
+  font-family: bold;
+  font-size: 36px;
+}
+
+.vr-bottom__minititle {
+  font-family: light;
+  font-size: 36px;
+}
+
+.vr-bottom__text {
+  width: 630px;
+  font-size: 1rem;
+  margin: 42px 0 28px;
+}

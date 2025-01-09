@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  background-color: $bg-color;
+  z-index: 1;
+  top: 0;
+}
+
+.header__wrapper {
+  @include d-flex(space-between);
+  padding: 20px 0;
+}
+
+.header__box {
+  @include d-flex(flex-start, 15px);
+}
+
+.header__menu {
+  @include d-flex(flex-start, 42px);
+}
+
+.header__link {
+  font-family: bold;
+  font-size: 12px;
+  color: $main-color;
+}
+
+.header__btns {
+  @include d-flex(flex-start, 38px);
+}
+
+.btn--active {
+    @include btn(2px solid $main-color, linear-gradient( $bg-color 0%, $bg-color 100%) , $main-color);
+}

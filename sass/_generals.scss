@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  font-family: regular;
+  background-color: $bg-color;
+  color: $main-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contenier {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 84px;
+}
+
+.btn {
+  @include btn;
+}

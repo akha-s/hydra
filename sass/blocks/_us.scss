@@ -1,0 +1,41 @@
+.us__wrapper {
+  padding: 25px 80px;
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  border-radius: 90px;
+  margin-top: 88px;
+  @include d-flex(space-around);
+  color: $main-color;
+}
+
+.us__set {
+  @include d-flex(flex-start, 24px);
+}
+
+.mini-set {
+    @include d-flex(flex-start, 14px);
+}
+
+.us__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.us__title {
+    font-family: bold;
+    font-size: 24px;
+}
+
+.us__text {
+    font-size: 14px;
+}
+
+.us__hr {
+    width: 1px;
+    height: 116px;
+    background-color: $light-color;
+}

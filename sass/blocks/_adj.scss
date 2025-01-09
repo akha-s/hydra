@@ -1,0 +1,85 @@
+.adj__box {
+  @include d-flex(flex-start, 361px);
+}
+
+.adj-box__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.adj-box__title {
+  font-family: bold;
+  font-size: 36px;
+  width: 306px;
+}
+
+.adj-box__minititle {
+  font-family: light;
+  font-size: 36px;
+  position: relative;
+  width: 321px;
+}
+
+.adj-box__minititle::after {
+  content: "";
+  width: 228px;
+  height: 100px;
+  background-image: url("../../assents/vr.arrow.png");
+  background-size: cover;
+  position: absolute;
+  top: -30px;
+  right: -244px;
+}
+
+.adj-box__text {
+  width: 652px;
+  font-size: 1rem;
+}
+
+// adj-box-end //
+
+.adj__menu {
+  padding: 138px;
+  @include d-flex(center, 152px);
+}
+
+.adj__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.adj__number {
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+  background-image: url("../../assents/build.ellipse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 19px solid #0d0d0d52;
+  @include d-flex(center);
+  color: $bg-color;
+  font-size: 64px;
+  font-family: bold;
+}
+
+.adj__title {
+  font-size: 24px;
+  font-family: bold;
+  position: relative;
+  width: 187px;
+}
+
+.adj__title::before {
+  content: "";
+  width: 27px;
+  height: 22px;
+  background-image: url("../../assents/adj.arrow.png");
+  background-size: cover;
+  position: absolute;
+  top: calc(0% + 3px);
+  left: -37px;
+}

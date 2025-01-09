@@ -1,0 +1,67 @@
+.dive__wrapper {
+  @include d-flex(flex-start, 308px);
+  padding: 95px 99px 0 0;
+  margin-top: 159px;
+}
+
+.dive__info {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.dive__title {
+  font-family: bold;
+  font-size: 40px;
+  color: $main-color;
+  width: 456px;
+}
+
+.lavender {
+    color: $dark-color;
+    font-size: 46px;
+}
+
+.dive__text {
+    font-size: 1rem;
+    color: $main-color;
+    width: 450px;
+}
+
+.dive__btn {
+    width: 220px;
+    margin-top: 30px;
+}
+
+.dive__btn::after {
+    content: "";
+    width: 41px;
+    height: 33px;
+    background-image: url("../../assents/dive.arrow.png");
+    background-size: cover;
+    position: absolute;
+    top: calc(50% - 16.5px);
+    right: -81px;
+}
+
+.dive__box {
+    width: 542px;
+    height: 455px;
+    position: relative;
+}
+
+.dive__shadow {
+    width: 524px;
+    height: 455px;
+    position: absolute;
+}
+
+.dive__img {
+    width: 490px;
+    height: 426px;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    right: 18px;
+    bottom: 14px;
+}
