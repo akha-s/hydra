@@ -1,63 +1,49 @@
 .join__wrapper {
-  padding: 90px 106px 84px;
-  background-image: radial-gradient(
-    50% 50% at 50% 50%,
-    #403a5f 0%,
-    #211e2e 100%
-  );
-  border-radius: 100px;
-  display: flex;
+  margin: 30px 0;
+  padding: 45px 25px;
+  background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+  border-radius: 70px;
+  @include d-flex(center, 36px);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .join__title {
-  font-family: bold;
-  font-size: 36px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .join__hr {
-  width: 414px;
+  min-width: 116px;
   height: 1px;
-  background-image: linear-gradient(
-    $bg-color 10%,
-    $dark-color 50%,
-    $light-color 90%,
-    $bg-color 100%
-  );
-  margin: 30px 0 21px;
+  background-color: $dark-color;
+  margin: -15px 0 -17px;
 }
 
 .join__minititle {
-    font-size: 36px;
-    font-family: light;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  border-left-width: 20px;
 }
 
 .join__info {
-    margin: 65px 0 51px;
-    display: flex;
-    flex-direction: column;
-    gap: 39px;
-}
-
-.join__line {
-    @include d-flex(flex-start, 10px);
+  width: 100%;
+  @include d-flex(flex-start, 16px);
+  flex-direction: column;
 }
 
 .join__border {
-    width: 524px;
-    height: 72px;
-    border-radius: 40px;
-    border: 2px solid $main-color;
-    padding: 27px 48px;
+  width: 100%;
+  padding: 20px 25px;
+  border: 2px solid $main-color;
+  border-radius: 45px;
 }
 
 .join__label {
     font-size: 14px;
+    font-weight: 400;
 }
 
 .bigger__border {
-    width: 1058px;
-    height: 210px;
+    min-height: 200px;
 }

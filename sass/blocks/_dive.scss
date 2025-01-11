@@ -1,67 +1,38 @@
 .dive__wrapper {
-  @include d-flex(flex-start, 308px);
-  padding: 95px 99px 0 0;
-  margin-top: 159px;
-}
-
-.dive__info {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.dive__title {
-  font-family: bold;
-  font-size: 40px;
-  color: $main-color;
-  width: 456px;
-}
-
-.lavender {
-    color: $dark-color;
-    font-size: 46px;
-}
-
-.dive__text {
-    font-size: 1rem;
-    color: $main-color;
-    width: 450px;
-}
-
-.dive__btn {
-    width: 220px;
-    margin-top: 30px;
-}
-
-.dive__btn::after {
-    content: "";
-    width: 41px;
-    height: 33px;
-    background-image: url("../../assents/dive.arrow.png");
-    background-size: cover;
-    position: absolute;
-    top: calc(50% - 16.5px);
-    right: -81px;
+  padding: 30px 0;
+  @include d-flex(center, 39px);
+  flex-direction: column;
 }
 
 .dive__box {
-    width: 542px;
-    height: 455px;
-    position: relative;
+  position: relative;
 }
 
 .dive__shadow {
-    width: 524px;
-    height: 455px;
-    position: absolute;
+  width: 340px;
+  height: 296px;
 }
 
 .dive__img {
-    width: 490px;
-    height: 426px;
-    position: absolute;
-    top: 15px;
-    left: 16px;
-    right: 18px;
-    bottom: 14px;
+  width: 318px;
+  height: 277px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.dive__info {
+  @include d-flex(center, 36px);
+  flex-direction: column;
+}
+
+.lavender {
+  color: $light-color;
+  font-size: 40px;
+}
+
+.dive__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
 }

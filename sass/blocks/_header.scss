@@ -1,33 +1,33 @@
-.header {
-  position: fixed;
-  background-color: $bg-color;
-  z-index: 1;
-  top: 0;
-}
-
 .header__wrapper {
-  @include d-flex(space-between);
   padding: 20px 0;
+  @include d-flex(space-between);
 }
 
 .header__box {
-  @include d-flex(flex-start, 15px);
+  @include d-flex(space-between, 11px);
+}
+
+.header__logo {
+  width: 69px;
+  height: 58px;
+}
+
+.header__pic {
+  width: 46px;
+  height: 28px;
+} 
+
+.header__info {
+  position: relative;
 }
 
 .header__menu {
-  @include d-flex(flex-start, 42px);
+  display: none;
 }
 
-.header__link {
-  font-family: bold;
-  font-size: 12px;
-  color: $main-color;
-}
+.headeer__list:hover .header__menu {
+  display: block;
+  position: absolute;
+  top: 10px;
 
-.header__btns {
-  @include d-flex(flex-start, 38px);
-}
-
-.btn--active {
-    @include btn(2px solid $main-color, linear-gradient( $bg-color 0%, $bg-color 100%) , $main-color);
 }

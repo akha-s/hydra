@@ -1,72 +1,41 @@
 .footer__wrapper {
-  padding: 130px 0 59px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    padding: 30px 0;
+    @include d-flex(center, 38px);
+    flex-direction: column;
 }
 
 .footer__info {
-  @include d-flex(flex-start, 81px, flex-start);
+    @include d-flex(center, 56px);
+    flex-direction: column;
 }
 
 .footer__logo {
-  width: 185px;
-  height: 187px;
-  margin-top: 7px;
+    width: 185px;
+    height: 187px;
 }
 
-.footer__menu {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.footer__link {
-  color: $main-color;
-  font-family: bold;
-  font-size: 1rem;
+.footer__box {
+    @include d-flex(center, 35px);
+    flex-direction: column;
 }
 
 .footer__title {
-  font-size: 1rem;
-  font-family: bold;
-  width: 206px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .footer__sites {
-  @include d-flex(flex-start, 20px);
-  padding: 39px 0 49px;
+    @include d-flex(center, 20px);
 }
 
 .footer__hr {
-  width: 5px;
-  height: 196px;
-  background-image: linear-gradient(
-    to bottom,
-    $bg-color 20%,
-    $dark-color 40%,
-    $light-color 80%,
-    $bg-color 100%
-  );
-  margin-bottom: 11px;
-}
-
-.footer__hr-lenth {
-  width: 1269px;
-  height: 2px;
-  background-image: linear-gradient(
-    to bottom,
-    $bg-color 20%,
-    $dark-color 40%,
-    $light-color 80%,
-    $bg-color 100%
-  );
-  margin: 73px 0 49px;
+    min-width: 289px;
+    background-color: $light-color;
+    height: 1px;
 }
 
 .footer__text {
+    text-align: center;
     font-size: 14px;
-    font-family: bold;
-    letter-spacing: 2px;
+    font-weight: 700;
 }
